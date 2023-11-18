@@ -1,0 +1,79 @@
+//variabile
+$colorDark: #222;
+$colorLight: orange;
+$width: 1200px;
+$height: 100px;
+
+@mixin border($dir) {
+  @if $dir == "all" {
+    border: $height * 0.05 solid darken($colorLight, 15%);
+  }
+  @if $dir == "bottom" {
+    border-bottom: $height * 0.05 solid darken($colorLight, 15%);
+  }
+}
+
+body {
+  background-color: $colorDark;
+  font-family: arial;
+}
+.ruler {
+  background-color: $colorLight;
+  width: $width;
+  height: $height;
+
+  @include border("all");
+  border-radius: $height * 0.1;
+
+  .indicator {
+    position: relative;
+    height: 0.7 * $height;
+    @include border("bottom");
+    border-left: 0.05 * $width solid $colorLight;
+    border-right: 0.05 * $width solid $colorLight;
+    h1 {
+      text-align: center;
+      margin: 0.3 * $height -0.09 * $height;
+    }
+    .last {
+      margin-left: -0.16 * $height;
+    }
+    .first {
+      margin-left: -0.12 * $height;
+    }
+    .four {
+      margin-left: -0.15 * $height;
+    }
+
+    .lg,
+    .zero {
+      position: absolute;
+      height: 0.3 * $height;
+      width: 0.03 * $height;
+      background-color: $colorDark;
+    }
+    $step: $width * 0.09;
+
+    @for $n from 1 through 11 {
+      .lg:nth-child(#{$n}) {
+        left: $n * $step;
+      }
+    }
+
+    .mm {
+      position: absolute;
+      height: 0.1 * $height;
+      width: 0.03 * $height;
+      background-color: $colorDark;
+    }
+    $step: $width * 0.009;
+    @for $n from 1 through 100 {
+      .mm:nth-child(#{$n}) {
+        left: $n * $step;
+      }
+      .mm:nth-child(5n) {
+        height: 0.2 * $height;
+      }
+    }
+  }
+}

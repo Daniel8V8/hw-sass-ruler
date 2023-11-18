@@ -1,0 +1,678 @@
+body {
+  background-color: #222;
+  font-family: arial;
+}
+
+.ruler {
+  background-color: orange;
+  width: 1200px;
+  height: 100px;
+  border: 5px solid #b37400;
+  border-radius: 10px;
+}
+.ruler .indicator {
+  position: relative;
+  height: 70px;
+  border-bottom: 5px solid #b37400;
+  border-left: 60px solid orange;
+  border-right: 60px solid orange;
+}
+.ruler .indicator h1 {
+  text-align: center;
+  margin: 30px -9px;
+}
+.ruler .indicator .last {
+  margin-left: -16px;
+}
+.ruler .indicator .first {
+  margin-left: -12px;
+}
+.ruler .indicator .four {
+  margin-left: -15px;
+}
+.ruler .indicator .lg,
+.ruler .indicator .zero {
+  position: absolute;
+  height: 30px;
+  width: 3px;
+  background-color: #222;
+}
+.ruler .indicator .lg:nth-child(1) {
+  left: 108px;
+}
+.ruler .indicator .lg:nth-child(2) {
+  left: 216px;
+}
+.ruler .indicator .lg:nth-child(3) {
+  left: 324px;
+}
+.ruler .indicator .lg:nth-child(4) {
+  left: 432px;
+}
+.ruler .indicator .lg:nth-child(5) {
+  left: 540px;
+}
+.ruler .indicator .lg:nth-child(6) {
+  left: 648px;
+}
+.ruler .indicator .lg:nth-child(7) {
+  left: 756px;
+}
+.ruler .indicator .lg:nth-child(8) {
+  left: 864px;
+}
+.ruler .indicator .lg:nth-child(9) {
+  left: 972px;
+}
+.ruler .indicator .lg:nth-child(10) {
+  left: 1080px;
+}
+.ruler .indicator .lg:nth-child(11) {
+  left: 1188px;
+}
+.ruler .indicator .mm {
+  position: absolute;
+  height: 10px;
+  width: 3px;
+  background-color: #222;
+}
+.ruler .indicator .mm:nth-child(1) {
+  left: 10.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(2) {
+  left: 21.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(3) {
+  left: 32.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(4) {
+  left: 43.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(5) {
+  left: 54px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(6) {
+  left: 64.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(7) {
+  left: 75.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(8) {
+  left: 86.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(9) {
+  left: 97.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(10) {
+  left: 108px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(11) {
+  left: 118.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(12) {
+  left: 129.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(13) {
+  left: 140.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(14) {
+  left: 151.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(15) {
+  left: 162px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(16) {
+  left: 172.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(17) {
+  left: 183.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(18) {
+  left: 194.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(19) {
+  left: 205.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(20) {
+  left: 216px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(21) {
+  left: 226.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(22) {
+  left: 237.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(23) {
+  left: 248.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(24) {
+  left: 259.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(25) {
+  left: 270px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(26) {
+  left: 280.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(27) {
+  left: 291.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(28) {
+  left: 302.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(29) {
+  left: 313.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(30) {
+  left: 324px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(31) {
+  left: 334.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(32) {
+  left: 345.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(33) {
+  left: 356.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(34) {
+  left: 367.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(35) {
+  left: 378px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(36) {
+  left: 388.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(37) {
+  left: 399.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(38) {
+  left: 410.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(39) {
+  left: 421.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(40) {
+  left: 432px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(41) {
+  left: 442.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(42) {
+  left: 453.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(43) {
+  left: 464.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(44) {
+  left: 475.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(45) {
+  left: 486px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(46) {
+  left: 496.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(47) {
+  left: 507.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(48) {
+  left: 518.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(49) {
+  left: 529.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(50) {
+  left: 540px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(51) {
+  left: 550.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(52) {
+  left: 561.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(53) {
+  left: 572.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(54) {
+  left: 583.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(55) {
+  left: 594px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(56) {
+  left: 604.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(57) {
+  left: 615.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(58) {
+  left: 626.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(59) {
+  left: 637.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(60) {
+  left: 648px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(61) {
+  left: 658.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(62) {
+  left: 669.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(63) {
+  left: 680.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(64) {
+  left: 691.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(65) {
+  left: 702px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(66) {
+  left: 712.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(67) {
+  left: 723.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(68) {
+  left: 734.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(69) {
+  left: 745.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(70) {
+  left: 756px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(71) {
+  left: 766.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(72) {
+  left: 777.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(73) {
+  left: 788.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(74) {
+  left: 799.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(75) {
+  left: 810px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(76) {
+  left: 820.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(77) {
+  left: 831.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(78) {
+  left: 842.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(79) {
+  left: 853.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(80) {
+  left: 864px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(81) {
+  left: 874.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(82) {
+  left: 885.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(83) {
+  left: 896.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(84) {
+  left: 907.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(85) {
+  left: 918px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(86) {
+  left: 928.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(87) {
+  left: 939.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(88) {
+  left: 950.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(89) {
+  left: 961.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(90) {
+  left: 972px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(91) {
+  left: 982.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(92) {
+  left: 993.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(93) {
+  left: 1004.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(94) {
+  left: 1015.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(95) {
+  left: 1026px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(96) {
+  left: 1036.8px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(97) {
+  left: 1047.6px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(98) {
+  left: 1058.4px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(99) {
+  left: 1069.2px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}
+.ruler .indicator .mm:nth-child(100) {
+  left: 1080px;
+}
+.ruler .indicator .mm:nth-child(5n) {
+  height: 20px;
+}/*# sourceMappingURL=styles.css.map */
